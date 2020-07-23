@@ -1,6 +1,5 @@
 package concurrency;
 
-import sun.jvm.hotspot.memory.FreeChunk;
 
 import java.util.Random;
 import java.util.concurrent.locks.Lock;
