@@ -10,9 +10,12 @@ public class Armstrong {
         if(number < 0) {
             System.out.println("Please Enter positive number");
         }
-        while((number % 10) != 0) {
-
+        int output =0;
+        while(number!= 0) {
+            int mod = number % 10;
+            number = number / 10;
+            output = output + ((mod * mod)* mod);
         }
-
+        System.out.println("Output = " + output);
     }
 }
