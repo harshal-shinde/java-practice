@@ -17,7 +17,8 @@ interface Provider {
 
 //Non instantiable class for service registration and access
 public class Services {
-    private Services () {}
+    private Services() {
+    }
 
     //Maps service names to services
 
@@ -33,14 +34,15 @@ public class Services {
     public static void registerDefaultProvider(String name, Provider p) {
         registerDefaultProvider(DEFAULT_PROVIDER_NAME, p);
     }
+
     //Service access API
-    public static Service newInstance () {
+    public static Service newInstance() {
         return newInstance(DEFAULT_PROVIDER_NAME);
     }
 
-    public static Service newInstance (String name) {
-        Provider p =providers.get(name);
-        if(p==null) {
+    public static Service newInstance(String name) {
+        Provider p = providers.get(name);
+        if (p == null) {
             throw new IllegalArgumentException(
                     "No provider registered with name:" + name
             );
