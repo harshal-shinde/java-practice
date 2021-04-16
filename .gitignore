@@ -1,3 +1,6 @@
 .idea
 java-practice.iml
 out
+.DS_Store
+.classpath
+.project
