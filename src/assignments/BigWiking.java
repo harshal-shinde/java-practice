@@ -23,9 +23,8 @@ public class BigWiking {
             for (char c : ch) {
                 
                 if(Character.isDigit(c)) {
-                	 System.out.println(c);
-                	sum+=(Character.getNumericValue(c));
-                }else {
+                	sum +=(Character.getNumericValue(c));
+                } else {
                 	s.append(c);
                 	
                 }
