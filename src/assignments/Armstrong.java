@@ -17,5 +17,7 @@ public class Armstrong {
             output = output + ((mod * mod)* mod);
         }
         System.out.println("Output = " + output);
+        
+        scanner.close();
     }
 }
