@@ -6,8 +6,8 @@ import java.util.stream.Collectors;
 
 public class StreamAPIExample {
 	public static void main(String []args) {
-		List number = Arrays.asList(2,3,4,5);
-		List names = Arrays.asList("Reflection API", "Collection");
+		List<Integer> number = Arrays.asList(2,3,4,5);
+		List<String> names = Arrays.asList("Reflection API", "Collection");
 		
 		//Filter
 		List result = (List) names.stream().filter( s -> s.toString().startsWith("R")).collect(Collectors.toList());
@@ -17,17 +17,22 @@ public class StreamAPIExample {
 	
 	
 		//Terminal Operations
-		List number2 = Arrays.asList(2,3,4,5,3);
-		Set square = (Set) number2.stream().map(x -> x *x)
-				.collect(Collectors.toSet()); 
+//		List number2 = Arrays.asList(2,3,4,5,3);
+//		Set square = (Set) number2.stream().map(x -> x *x)
+//				.collect(Collectors.toSet()); 
 		
 		//Foreach
-		List numberForEach = Arrays.asList(2,3,4,5);
-		List resultnumberForEach = (List) numberForEach.stream()
-				.filter(y -> System.out.println(y));
+//		List numberForEach = Arrays.asList(2,3,4,5);
+//		List resultnumberForEach = (List) numberForEach.stream()
+//				.filter(y -> System.out.println(y));
+	
 		
 		
-		
+		//Get employees having address stars with p
+//		employees
+//		.stream()
+//		.filter(e -> e.getAddress().stream().anyMatch(addr ->addr.getCity().startsWith('p')))
+//		.forEach(System.out :: println);
 	}
 
 }
