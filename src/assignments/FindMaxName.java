@@ -17,7 +17,7 @@ public class FindMaxName {
 		ConcurrentHashMap result  = new ConcurrentHashMap();
 		for(int i=0; i< size ; i++) {
 			Object tempName = result.get(splitedNames[i]);
-			if(result.get(splitedNames[i]))
+			if((boolean) result.get(splitedNames[i]));
 		}
 		
 		return "";

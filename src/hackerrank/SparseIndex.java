@@ -10,7 +10,7 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-class Result {
+class ResultClass {
 
     /*
      * Complete the 'matchingStrings' function below.
@@ -35,7 +35,7 @@ class Result {
 
 }
 
-public class Solution {
+public class SparseIndex {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
@@ -73,3 +73,5 @@ public class Solution {
 
         bufferedReader.close();
         bufferedWriter.close();
+        
+    }
