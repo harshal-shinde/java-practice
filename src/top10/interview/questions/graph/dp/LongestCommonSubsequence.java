@@ -1,13 +1,18 @@
-package top10.interview.questions.graph.dynamic.programming;
+package top10.interview.questions.graph.dp;
 
 public class LongestCommonSubsequence{
 
+int count = 0;
 int lcs(char[] X, char[] Y, int xSize, int ySize) {
 	
 	System.out.println("Elements in X array = " + String.valueOf(X));
-	System.out.println("Elements in Y array = " + String.valueOf(X));
-	System.out.println("Siez of X = " + String.valueOf(X).length());
-	System.out.println("Siez of Y = " + String.valueOf(Y).length());
+	System.out.println("Elements in Y array = " + String.valueOf(Y));
+	System.out.println("Siez of X = " + xSize);
+	System.out.println("Siez of Y = " + ySize);
+	int printCount = count++; 
+	System.out.println("------------------"+printCount+"-------------------------");
+	
+	
 	
 	if(xSize ==0 || ySize==0) {
 		return 0;
