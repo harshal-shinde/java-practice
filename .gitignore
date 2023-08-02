@@ -6,3 +6,4 @@ out
 .project
 .vscode
 src/Jackson/target/
+/target/

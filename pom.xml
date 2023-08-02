@@ -4,4 +4,8 @@
   <groupId>src</groupId>
   <artifactId>java-practice</artifactId>
   <version>1</version>
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
 </project>
