@@ -15,7 +15,7 @@ public class GroupIteration {
 		int[] arr = {1, 2, 3, 4, 5, 6};
 		int group = 4;
 		int iterations = 7;
-		List<List <Integer>> result	 = getIterations(arr, group, iterations);
+            List<List<Integer>> result = getIterations(arr, group, iterations);
 		
 	}
 	

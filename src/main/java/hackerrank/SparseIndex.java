@@ -1,3 +1,5 @@
+package hackerrank;
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -37,12 +39,17 @@ class ResultClass {
 
 public class SparseIndex {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+        BufferedReader bufferedReader
+                = new BufferedReader(new InputStreamReader(System.in));
+
+        BufferedWriter bufferedWriter
+                = new BufferedWriter(
+                        new FileWriter(System.getenv("OUTPUT_PATH")));
 
         int stringsCount = Integer.parseInt(bufferedReader.readLine().trim());
 
-        List<String> strings = IntStream.range(0, stringsCount).mapToObj(i -> {
+        List<String> strings
+                = IntStream.range(0, stringsCount).mapToObj(i -> {
             try {
                 return bufferedReader.readLine();
             } catch (IOException ex) {
@@ -62,16 +69,17 @@ public class SparseIndex {
         })
             .collect(toList());
 
-        List<Integer> res = Result.matchingStrings(strings, queries);
+//        List<Integer> res = Result.matchingStrings(strings, queries);
 
-        bufferedWriter.write(
-            res.stream()
-                .map(Object::toString)
-                .collect(joining("\n"))
-            + "\n"
-        );
+//        bufferedWriter.write(
+//            res.stream()
+//                .map(Object::toString)
+//                .collect(joining("\n"))
+//            + "\n"
+//        );
 
         bufferedReader.close();
         bufferedWriter.close();
-        
+
     }
+}
